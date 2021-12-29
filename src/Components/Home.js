@@ -20,13 +20,13 @@ export default function Home() {
             .start();
         }}
       /> */}
-      <Typewriter
+      {/* <Typewriter
   options={{
     strings: ['Hello, my name is Dagem Befikadu', 'I am Software Engineer baised out of San Jose,CA'],
     autoStart: true,
     loop: true,
   }}
-/>
+/> */}
     </div>
   );
 }
