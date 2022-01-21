@@ -48,9 +48,9 @@ export default function Home() {
                 
               </Card.Text>
               <MDBContainer>
-              <a href="#targetname"><Image className="m-xs-5 mb-sm-5" roundedCircle src={Resume} width="155" length="155"/></a>  
-              <a href="#targetname"><Image className="m-xs-5 mb-sm-5" roundedCircle src={Projects} width="150" length="150"/></a> 
-              <a href="#targetname"><Image className="m-xs-5 mb-sm-5" roundedCircle src={About} width="150" length="150"/></a>   
+              <a href="#targetname"><Image className="m-sm-5 mb-sm-5" roundedCircle src={Resume} width="115" length="115"/></a>  
+              <a href="#targetname"><Image className="m-sm-5 mb-sm-5" roundedCircle src={Projects} width="110" length="110"/></a> 
+              <a href="#targetname"><Image className="m-sm-5 mb-sm-5" roundedCircle src={About} width="110" length="110"/></a>   
               </MDBContainer>
             </Card.Body>
           </Card>
