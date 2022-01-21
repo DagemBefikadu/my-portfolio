@@ -1,23 +1,27 @@
 import React from 'react'
 import {Nav, Navbar, Container, Image} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import logo from '../Static/DagemLogo.png'
+// import logo from '../Static/DagemLogo.png'
 
 
 
 export default function Header() {
-    const backgroundStyle = {
-        backgroundColor: '#7c6c89'
+    const linkStyle = {
+        color: 'black',
+        textDecoration: 'none'
     }    
     return (
         <div>
-            <Navbar variant='dark' expand='md'>
+            <Navbar sticky="top" variant='dark' expand='md'>
                     <Navbar.Brand>
-                        <Image src={logo} width="200" height="200"/>
+                        {/* <Image src={logo} width="200" height="200"/> */}
                     </Navbar.Brand>
-                    <Nav.Link></Nav.Link>
-                    <Nav.Link>About</Nav.Link>
-                    <Nav.Link>Projects</Nav.Link>
+                    <Nav className="justify-content-end">
+                        <Nav.Link style={linkStyle}>About</Nav.Link>
+                        <Nav.Link style={linkStyle}>| Projects</Nav.Link>
+                        <Nav.Link style={linkStyle}>| Contacts</Nav.Link>
+                    </Nav>
+     
             </Navbar>
         </div>
     )

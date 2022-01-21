@@ -19,7 +19,7 @@ export default function About() {
             <Container>
             <CardGroup>
             <Card >
-               <Card.Img src="https://media-exp1.licdn.com/dms/image/C4E03AQHMAvT9s8_UMg/profile-displayphoto-shrink_800_800/0/1553665237112?e=1645056000&v=beta&t=arDjJftlWQPsO1Li-LvJX0I0t3EImIhCZUwIJrG0BzY" />
+               {/* <Card.Img src="https://media-exp1.licdn.com/dms/image/C4E03AQHMAvT9s8_UMg/profile-displayphoto-shrink_800_800/0/1553665237112?e=1645056000&v=beta&t=arDjJftlWQPsO1Li-LvJX0I0t3EImIhCZUwIJrG0BzY" /> */}
             </Card>
             <Card >
                <Card.Body>
