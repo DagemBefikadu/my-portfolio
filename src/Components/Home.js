@@ -8,22 +8,14 @@ import GitHub from "../Static/github.png";
 import Outlook from "../Static/outlook.png";
 import LinkedIn from "../Static/linkedIn.png";
 import { Image, Container, Card, CardGroup, Button } from "react-bootstrap";
-import { MDBContainer } from 'mdb-react-ui-kit';
+
 
 export default function Home() {
   const backgroundColor = {
 		border: '#BCCCE0',
 		backgroundColor: '#f2f0eb',
 	}
-  const img = {
-    filter: 'grayscale(100%)'
-  }
-
-  const backgroundButton = {
-		border: '#4C061D',
-		backgroundColor: '#4C061D'
-	}
-
+ 
   return (
     <div>
       <Container></Container>
