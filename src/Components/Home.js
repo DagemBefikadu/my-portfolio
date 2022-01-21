@@ -1,8 +1,11 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import ME from "../Static/ME.jpg";
+import ME2 from "../Static/ME2.png";
 import Resume from "../Static/Resume.png";
+import Projects from "../Static/Projects.png";
+import About from "../Static/About.png";
 import { Image, Container, Card, CardGroup, Button } from "react-bootstrap";
+import { MDBContainer } from 'mdb-react-ui-kit';
 
 export default function Home() {
   const backgroundColor = {
@@ -23,7 +26,7 @@ export default function Home() {
       <Container></Container>
       <Container>
         <CardGroup>
-          <Image style={img}roundedCircle src={ME} width="300" length="300" />
+          <Image className="m-4" roundedCircle src={ME2}  />
           <Card style={backgroundColor}>
             <Card.Body>
               <Card.Text>
@@ -44,10 +47,11 @@ export default function Home() {
                 I flourish in team oriented environments and adapt well to challenges.</h5>
                 
               </Card.Text>
-              <a href="#targetname"><Image roundedCircle src={Resume} width="100" length="100"/></a>  
-              
-              <Image roundedCircle src={Resume} width="100" length="100"/>
-
+              <MDBContainer>
+              <a href="#targetname"><Image className="m-xs-5 mb-sm-5" roundedCircle src={Resume} width="155" length="155"/></a>  
+              <a href="#targetname"><Image className="m-xs-5 mb-sm-5" roundedCircle src={Projects} width="150" length="150"/></a> 
+              <a href="#targetname"><Image className="m-xs-5 mb-sm-5" roundedCircle src={About} width="150" length="150"/></a>   
+              </MDBContainer>
             </Card.Body>
           </Card>
         </CardGroup>
