@@ -4,6 +4,9 @@ import ME2 from "../Static/ME2.png";
 import Resume from "../Static/Resume.png";
 import Projects from "../Static/Projects.png";
 import About from "../Static/About.png";
+import GitHub from "../Static/github.png";
+import Outlook from "../Static/outlook.png";
+import LinkedIn from "../Static/linkedIn.png";
 import { Image, Container, Card, CardGroup, Button } from "react-bootstrap";
 import { MDBContainer } from 'mdb-react-ui-kit';
 
@@ -26,7 +29,7 @@ export default function Home() {
       <Container></Container>
       <Container>
         <CardGroup>
-          <Image className="m-4" roundedCircle src={ME2}  />
+          <img className="m-5" src={ME2}  />
           <Card style={backgroundColor}>
             <Card.Body>
               <Card.Text>
@@ -37,21 +40,18 @@ export default function Home() {
                     loop: true,
                   }}
                 />
-                {/* <h4>
-                FULL STACK WEB DEVELOPER 
-                </h4> */}
-                <hr />
-                <h5>I'm a Full Stack Web Deleloper driven by critical thinking and problem solving. 
-                <br />
-                With a background in Sales and Management I possess the ability to thrive in fast-paced environments which required proactive decision-making. 
-                I flourish in team oriented environments and adapt well to challenges.</h5>
-                
               </Card.Text>
-              <MDBContainer>
-              <a href="#targetname"><Image className="m-sm-5 mb-sm-5" roundedCircle src={Resume} width="115" length="115"/></a>  
-              <a href="#targetname"><Image className="m-sm-5 mb-sm-5" roundedCircle src={Projects} width="110" length="110"/></a> 
+              
+              <Card.Text>
+              <a href='https://linkedin.com/in/dagembefikadu'><Image className="m-sm-5" src={LinkedIn} className="logo" alt="GitHub"width="50" length="50"/></a>
+              <a href={'mailto:dagem.befikadu@outlook.com'}><Image className="m-sm-5" alt="Outlook" src={Outlook}width="50" length="50"/></a>
+              <a href='https://github.com/DagemBefikadu'><Image className="m-sm-5"  src={GitHub} className="logo" alt="GitHub"width="50" length="50"/></a>
+              </Card.Text>
+              <Card.Text>
+              <a href="#targetname"><Image className=" " roundedCircle src={Resume} width="115" length="115"/></a>  
               <a href="#targetname"><Image className="m-sm-5 mb-sm-5" roundedCircle src={About} width="110" length="110"/></a>   
-              </MDBContainer>
+              <a href="#targetname"><Image className="" roundedCircle src={Projects} width="110" length="110"/></a> 
+              </Card.Text>
             </Card.Body>
           </Card>
         </CardGroup>

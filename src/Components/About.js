@@ -36,3 +36,10 @@ export default function About() {
         </div>
     )
 }
+
+
+// <hr />
+//                 <h5>I'm a Full Stack Web Deleloper driven by critical thinking and problem solving. 
+//                 <br />
+//                 With a background in Sales and Management I possess the ability to thrive in fast-paced environments which required proactive decision-making. 
+//                 I flourish in team oriented environments and adapt well to challenges.</h5>
