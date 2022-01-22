@@ -1,10 +1,47 @@
-import React from 'react'
+import React from "react";
+import { Card, CardGroup, Container, Image } from "react-bootstrap";
+import P1 from "../Static/projectImg/P1.png";
+import P2 from "../Static/projectImg/P2.png";
+import P3 from "../Static/projectImg/P3.png";
+import GitHub from "../Static/github.png";
+
 
 export default function Projects() {
-    return (
-        <div>
-            <h1>Projects</h1>
-        </div>
-    )
+  return (
+    <>
+      <h1>Projects</h1>
+      <CardGroup>
+        <Card>
+          <Card.Img src={P1}/>
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card>
+          <Card.Img src={P2} />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card>
+          <Card.Img src={P3} />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </CardGroup>
+    </>
+  );
 }
-
