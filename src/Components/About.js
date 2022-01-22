@@ -9,6 +9,7 @@ import post from "../Static/MyOther/post.png";
 import react from "../Static/MyOther/react.png";
 import python from "../Static/MyOther/python.png";
 
+
 export default function About() {
   const backgroundColor = {
     border: "#BCCCE0",
@@ -28,7 +29,7 @@ export default function About() {
     <div>
       <Container>
         <CardGroup>
-          <Card style={backgroundColor}>
+          <Card  style={backgroundColor}>
             <Card.Body>
             <Card style={fontColor}>A Little About Me...</Card>
             
