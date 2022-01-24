@@ -28,8 +28,8 @@ export default function Projects() {
   return (
     <>
       {/* <h1>Projects</h1> */}
-      <CardGroup id="projects">
-        <Card className="m-4" style={fontColor}>
+      <CardGroup >
+        <Card id="projects" className="m-4" style={fontColor}>
           <Card.Body>
             <Card style={fontColor}>Hoop Dreamer</Card>
             <br />
