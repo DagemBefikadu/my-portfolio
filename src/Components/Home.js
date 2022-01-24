@@ -29,7 +29,7 @@ export default function Home() {
       <Container></Container>
       <Container>
         <CardGroup>
-          <img className="m-5" src={ME2}  />
+          <img className=" m-xs-1 m-5" src={ME2}  />
           <Card style={backgroundColor}>
             <Card.Body>
               <Card.Text style={font}>

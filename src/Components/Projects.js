@@ -163,7 +163,7 @@ export default function Projects() {
                 </Col>
                 <Col>
                   {" "}
-                  <h5 style={fontColor}>Heroku Page</h5>
+                  <h5 style={fontColor}>Live Link</h5>
                   <a href="https://yene-buna.herokuapp.com/">
                     <Image
                       className="m-sm-5"
@@ -243,7 +243,7 @@ export default function Projects() {
                 </Col>
                 <Col>
                   {" "}
-                  <h5 style={fontColor}>Heroku Page</h5>
+                  <h5 style={fontColor}>Live Link</h5>
                   <a href="https://helping-hands-sei.herokuapp.com/">
                     <Image
                       className="m-sm-5"

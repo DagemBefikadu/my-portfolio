@@ -49,14 +49,14 @@ export default function About() {
           <Card style={backgroundColor}>
             <Card.Body>
             <Card.Text style={fontColor}>Skills</Card.Text>
-            <Image className="m-sm-5 mb-sm-5"src={css} width="50" length="50" />
-            <Image className="m-sm-5 mb-sm-5"src={js}width="50" length="50"></Image>
-            <Image className="m-sm-5 mb-sm-5"src={mongo}width="50" length="50"></Image>
-            <Image className="m-sm-5 mb-sm-5" src={node}width="50" length="50"></Image>
-            <Image className="m-sm-5 mb-sm-5"src={npm}width="50" length="50"></Image>
-            <Image className="m-sm-5 mb-sm-5" src={post}width="50" length="50"></Image>
-            <Image className="m-sm-5 mb-sm-5"src={python}width="50" length="50"></Image>
-            <Image className="m-sm-5 mb-sm-5"src={react}width="50" length="50"></Image>
+            <Image className="m-5 mb-5"src={css} width="50" length="50" />
+            <Image className="m-5 mb-5"src={js}width="50" length="50"></Image>
+            <Image className="m-5 mb-5" src={node}width="50" length="50"></Image>
+            <Image className="m-5 mb-5"src={npm}width="50" length="50"></Image>
+            <Image className="m-5 mb-5" src={post}width="50" length="50"></Image>
+            <Image className="m-5 mb-5"src={python}width="50" length="50"></Image>
+            <Image className="m-5 mb-5"src={react}width="50" length="50"></Image>
+            <Image className="m-5 mb-5"src={mongo}width="70" length="70"></Image>
             </Card.Body>
           </Card>
         </CardGroup>
