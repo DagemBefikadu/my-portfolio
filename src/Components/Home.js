@@ -11,6 +11,13 @@ import { Image, Container, Card, CardGroup, Button } from "react-bootstrap";
 
 
 export default function Home() {
+
+  const font = {
+    color:"#13315C",
+    // color:"#235789"
+    fontFamily: '"Georgia", "sans-serif"',
+  };
+  
   const backgroundColor = {
 		border: '#BCCCE0',
 		backgroundColor: '#f2f0eb',
@@ -24,7 +31,7 @@ export default function Home() {
           <img className="m-5" src={ME2}  />
           <Card style={backgroundColor}>
             <Card.Body>
-              <Card.Text>
+              <Card.Text style={font}>
                 <Typewriter 
                   options={{
                     strings: ["Dagem", "Developer", "Designer"],
