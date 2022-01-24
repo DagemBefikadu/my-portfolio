@@ -1,8 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { Fragment } from "react";
 import Home from './Components/Home';
 import Header from './partials/Header';
 import About from './Components/About';
 import Projects from './Components/Projects';
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const backgroundColor = {
@@ -10,8 +12,7 @@ function App() {
     backgroundColor: "4287f5",
   };
   return (
-    <div className="App">
-      <header className="App-header">
+    <Fragment className="App">
           <Header />
         <h1>
           <Home />
@@ -28,8 +29,7 @@ function App() {
         <h1>
           <Projects />
         </h1>
-      </header>
-    </div>
+    </Fragment>
   );
 }
 

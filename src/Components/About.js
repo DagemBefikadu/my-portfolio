@@ -27,7 +27,7 @@ export default function About() {
   };
   return (
     <div>
-      <Container>
+      <Container id="about">
         <CardGroup>
           <Card  style={backgroundColor}>
             <Card.Body>

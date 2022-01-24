@@ -7,10 +7,6 @@ import GitHub from "../Static/github.png";
 import Chrome from "../Static/MyOther/chrome.png";
 
 export default function Projects() {
-  const font = {
-
-    fontFamily: '"Lucida Console", "Courier New", "monospace"',
-  };
 
   const backgroundColor = {
     borderStyle: "solid",
@@ -32,7 +28,7 @@ export default function Projects() {
   return (
     <>
       {/* <h1>Projects</h1> */}
-      <CardGroup>
+      <CardGroup id="projects">
         <Card className="m-4" style={fontColor}>
           <Card.Body>
             <Card style={fontColor}>Hoop Dreamer</Card>

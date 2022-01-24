@@ -2,6 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import ME2 from "../Static/ME2.png";
 import Resume from "../Static/Resume.png";
+import resume from "../Static/REsume.pdf";
 import Projects from "../Static/Projects.png";
 import About from "../Static/About.png";
 import GitHub from "../Static/github.png";
@@ -47,9 +48,9 @@ export default function Home() {
               <a href='https://github.com/DagemBefikadu'><Image className="m-sm-5"  src={GitHub} className="logo" alt="GitHub"width="50" length="50"/></a>
               </Card.Text>
               <Card.Text>
-              <a href="#targetname"><Image className=" " roundedCircle src={Resume} width="115" length="115"/></a>  
-              <a href="#targetname"><Image className="m-sm-5 mb-sm-5" roundedCircle src={About} width="110" length="110"/></a>   
-              <a href="#targetname"><Image className="" roundedCircle src={Projects} width="110" length="110"/></a> 
+              <a href={resume} target="_blank"><Image className=" " roundedCircle src={Resume} width="115" length="115"/></a>  
+              <a href="#about"><Image className="m-sm-5 mb-sm-5" roundedCircle src={About} width="110" length="110"/></a>   
+              <a href="#projects"><Image className="" roundedCircle src={Projects} width="110" length="110"/></a> 
               </Card.Text>
             </Card.Body>
           </Card>

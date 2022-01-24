@@ -5,6 +5,7 @@ import logo from "../Static/DagemLogo.png";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import Resume from "../Static/REsume.pdf";
 
 export default function Header() {
   const linkStyle = {
@@ -18,7 +19,7 @@ export default function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto ">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">| Resume</Nav.Link>
+            <Nav.Link href={Resume} target="_blank">| Resume</Nav.Link> 
           </Nav>
         </Navbar.Collapse>
       </Navbar>
