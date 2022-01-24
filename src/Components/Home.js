@@ -43,13 +43,13 @@ export default function Home() {
               </Card.Text>
               
               <Card.Text>
-              <a href='https://linkedin.com/in/dagembefikadu'><Image className="m-sm-5" src={LinkedIn} className="logo" alt="GitHub"width="50" length="50"/></a>
-              <a href={'mailto:dagem.befikadu@outlook.com'}><Image className="m-sm-5" alt="Outlook" src={Outlook}width="50" length="50"/></a>
-              <a href='https://github.com/DagemBefikadu'><Image className="m-sm-5"  src={GitHub} className="logo" alt="GitHub"width="50" length="50"/></a>
+              <a href='https://linkedin.com/in/dagembefikadu'><Image className="m-5" src={LinkedIn} className="logo" alt="GitHub"width="50" length="50"/></a>
+              <a href={'mailto:dagem.befikadu@outlook.com'}><Image className="m-5" alt="Outlook" src={Outlook}width="50" length="50"/></a>
+              <a href='https://github.com/DagemBefikadu'><Image className="m-5"  src={GitHub} className="logo" alt="GitHub"width="50" length="50"/></a>
               </Card.Text>
               <Card.Text>
               <a href={resume} target="_blank"><Image className=" " roundedCircle src={Resume} width="115" length="115"/></a>  
-              <a href="#about"><Image className="m-sm-5 mb-sm-5" roundedCircle src={About} width="110" length="110"/></a>   
+              <a href="#about"><Image className="m-5 mb-5" roundedCircle src={About} width="110" length="110"/></a>   
               <a href="#projects"><Image className="" roundedCircle src={Projects} width="110" length="110"/></a> 
               </Card.Text>
             </Card.Body>
