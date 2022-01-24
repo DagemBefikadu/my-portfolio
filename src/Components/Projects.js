@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardGroup, Container, Image } from "react-bootstrap";
+import { Card, CardGroup, Table, Container, Row,Col } from "react-bootstrap";
 import P1 from "../Static/projectImg/P1.png";
 import P2 from "../Static/projectImg/P2.png";
 import P3 from "../Static/projectImg/P3.png";
@@ -11,9 +11,14 @@ export default function Projects() {
   };
 
   const backgroundColor = {
-    border: "#BCCCE0",
-    backgroundColor: "#f2f0eb",
+    borderStyle: "solid",
+    backgroundColor: "#38361E",
+    color: "#F5F5DC",
   };
+
+  const border = {
+      borderStyle: "solid"
+  }
 
   const fontColor = {
     border: "#38361E",
@@ -33,15 +38,20 @@ export default function Projects() {
             <Card.Img src={P1} />
             <Card.Text>
               <br />
-              <h3>
-                Hoop Dreamer is a game where you will go around the court and
+              <h5 className="p-2" style={backgroundColor}>
+                > Hoop Dreamer is a game where you will go around the court and
                 collect all the game balls before the clock runs out. While
                 avoiding the food and sweat puddles
-              </h3>
+              </h5>
             </Card.Text>
             <Card.Text>
-              <h2>Technologies used: </h2>
-              <h3>HTML(Canvas), CSS, JavaScript, Bootstrap</h3>
+              <h5><strong>Technologies:</strong></h5>
+              <Row >
+              <Col className="m-1" style={backgroundColor}><h5>HTML(Canvas)</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>JavaScript(ES6)</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>CSS</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>Bootstrap</h5></Col>
+              </Row>
             </Card.Text>
           </Card.Body>
         </Card>
@@ -55,17 +65,24 @@ export default function Projects() {
             <Card.Img src={P2} />
             <Card.Text>
               <br />
-              <h3>
-                My Coffee is a place where you can learn about all the different
+              <h5 className="p-2" style={backgroundColor}>
+                > My Coffee is a place where you can learn about all the different
                 kinds of coffee around the world. Here you can find the name,
                 description and origin of the coffees
-              </h3>
+              </h5>
             </Card.Text>
             <Card.Text>
-              <h2>Technologies used: </h2>
-              <h3>
-                HTML, CSS, JavaScript, Node.js, ExpressJS, EJS, MySQL, Bootstrap
-              </h3>
+            <h5><strong>Technologies:</strong></h5>
+              <Row >
+              <Col className="m-1" style={backgroundColor}><h5>HTML</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>CSS</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>JavaScript(ES6)</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>Bootstrap</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>EJS</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>ExpressJS</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>NodeJS</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>MySQL</h5></Col>
+              </Row>
             </Card.Text>
           </Card.Body>
         </Card>
@@ -75,22 +92,26 @@ export default function Projects() {
             <br />
             <Card.Img src={P3} />
             <Card.Text>
-              <h3>
               <br />
-                Our users are community members who want to use their surplus
-                goods to meet the needs of their community members. Helping hand
+              <h5 className="p-2" style={backgroundColor}>
+                > Helping hand
                 gives these users the tools to find the right information for
                 meeting one another’s needs without having to look outside their
                 own community
-              </h3>
+              </h5>
             </Card.Text>
             <Card.Text>
-              
-              <h2>Technologies used: </h2>
-              <h3>
-                CSS, JavaScript, React, React Bootstrap, Node.js, ExpressJS,
-                MongoDB, Cloudinary’s API{" "}
-              </h3>
+            <h5><strong>Technologies:</strong></h5>
+              <Row >
+              <Col className="m-1" style={backgroundColor}><h5>CSS</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>JavaScript(ES6)</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>React</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>React Bootstrap</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>NodeJS</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>ExpressJS</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>MongoDB</h5></Col>
+              <Col className="m-1" style={backgroundColor}><h5>Cloudinary’s API{" "}</h5></Col>
+              </Row>
             </Card.Text>
           </Card.Body>
         </Card>
