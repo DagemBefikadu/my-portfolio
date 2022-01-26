@@ -1,21 +1,35 @@
 import React from "react";
-import { Card, CardGroup, Image, Container, Row, Col } from "react-bootstrap";
+import {
+  Card,
+  CardGroup,
+  Col, Row, Image, Container, Accordion, Button,
+} from "react-bootstrap";
+
 import P1 from "../Static/projectImg/P1.png";
 import P2 from "../Static/projectImg/P2.png";
 import P3 from "../Static/projectImg/P3.png";
 import GitHub from "../Static/github.png";
 import Chrome from "../Static/MyOther/chrome.png";
+import CustomToggle from "./CustomToggle";
 
 export default function Projects() {
-
   const backgroundColor = {
-    borderStyle: "solid",
-    backgroundColor: "#38361E",
-    color: "#F5F5DC",
+    borderStyle: "none",
+    backgroundColor: "#f2f0eb",
+    color: "black",
   };
 
-  const border = {
-    borderStyle: "solid",
+  const borderColor = {
+    borderColor: "#f2f0eb",
+    backgroundColor: "#f2f0eb",
+    color: "black",
+  };
+
+  const center = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '210px'
   };
 
   const fontColor = {
@@ -25,168 +39,59 @@ export default function Projects() {
     fontFamily: '"Lucida Console", "Courier New", "monospace"',
   };
 
+
   return (
     <>
-      {/* <h1>Projects</h1> */}
-      <CardGroup >
-        <Card id="projects" className="m-4" style={fontColor}>
-          <Card.Body>
-            <Card style={fontColor}>Hoop Dreamer</Card>
-            <br />
-            <Card.Img src={P1} />
-            <Card.Text>
-              <br />
-              <h5 className="p-2" style={backgroundColor}>
-                > Hoop Dreamer is a game where you will go around the court and
-                collect all the game balls before the clock runs out. While
-                avoiding the food and sweat puddles
-              </h5>
-            </Card.Text>
-            <Card.Text>
-              <h5>
-                <strong>Technologies:</strong>
-              </h5>
-              <Row>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>HTML(Canvas)</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>JavaScript(ES6)</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>CSS</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>Bootstrap</h5>
-                </Col>
-              </Row>
-            </Card.Text>
-            <Card.Text>
-              <Container>
-              <Row>
-                <Col>
-                      <h5 style={fontColor}>GitHub Repo</h5>
-                  {" "}
-                  <a href="https://github.com/DagemBefikadu/SEI-Project-one">
-                    <Image
-                      className="m-sm-5"
-                      src={GitHub}
-                      className="logo"
-                      alt="GitHub"
-                      width="50"
-                      length="50"
-                    />
-                  </a>
-                </Col>
-                <Col>
-                  {" "}
-                  <h5 style={fontColor}>Live Link</h5>
-                  <a href="https://dagembefikadu.github.io/SEI-Project-one/">
-                    <Image
-                      className="m-sm-5"
-                      src={Chrome}
-                      className="logo"
-                      alt="GitHub"
-                      width="50"
-                      length="50"
-                    />
-                  </a>
-                </Col>
-              </Row>
-              </Container>
-            </Card.Text>
+      <h1 style={center}>Projects</h1>
+      <CardGroup style ={backgroundColor}>
+        <Card  style ={backgroundColor}>
+          <Card.Text>
+              <Card.Img src={P1} />
+          </Card.Text>
+        </Card>
+        <Card style ={backgroundColor}>
+          <Card.Body style={center} >
+              <Card.Title ><h1>Hoop Dreams</h1></Card.Title>
+          </Card.Body>
+          <Accordion style={center} defaultActiveKey="0">
+      <Card style ={backgroundColor}>
+        <Card.Header>
+          <CustomToggle eventKey="0">More Detail!</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="0">
+          <Card.Body>Hello! I'm the body</Card.Body>
+        </Accordion.Collapse>
+      </Card>
+    </Accordion>
+        </Card>
+      </CardGroup>
+      <CardGroup style ={backgroundColor}>
+        <Card style ={backgroundColor}>
+          <Card.Body style={center} >
+              <Card.Title><h1>My Coffee</h1></Card.Title>
           </Card.Body>
         </Card>
-        <Card className="m-4" style={fontColor}>
-          <Card.Body>
-            <Card className="mb-1" style={fontColor}>
-              My Coffee
-            </Card>
-            <h4>"Yene Buna"</h4>
-            {/* <Card.Subtitle className="mb-2 text-muted">"Yene Buna"</Card.Subtitle> */}
-            <Card.Img src={P2} />
-            <Card.Text>
-              <br />
-              <h5 className="p-2" style={backgroundColor}>
-                > My Coffee is a place where you can learn about all the
-                different kinds of coffee around the world. Here you can find
-                the name, description and origin of the coffees
-              </h5>
-            </Card.Text>
-            <Card.Text>
-              <h5>
-                <strong>Technologies:</strong>
-              </h5>
-              <Row>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>HTML</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>CSS</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>JavaScript(ES6)</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>Bootstrap</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>EJS</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>ExpressJS</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>NodeJS</h5>
-                </Col>
-                <Col className="m-1" style={backgroundColor}>
-                  <h5>MySQL</h5>
-                </Col>
-              </Row>
-            </Card.Text>
-            <Card.Text>
-              <Container>
-              <Row>
-                <Col>
-                      <h5 style={fontColor}>GitHub Repo</h5>
-                  {" "}
-                  <a href="https://github.com/DagemBefikadu/projectTwoAssignment">
-                    <Image
-                      className="m-sm-5"
-                      src={GitHub}
-                      className="logo"
-                      alt="GitHub"
-                      width="50"
-                      length="50"
-                    />
-                  </a>
-                </Col>
-                <Col>
-                  {" "}
-                  <h5 style={fontColor}>Live Link</h5>
-                  <a href="https://yene-buna.herokuapp.com/">
-                    <Image
-                      className="m-sm-5"
-                      src={Chrome}
-                      className="logo"
-                      alt="GitHub"
-                      width="50"
-                      length="50"
-                    />
-                  </a>
-                </Col>
-              </Row>
-            </Container>
-            </Card.Text>
-          </Card.Body>
+        <Card  style ={backgroundColor}>
+          <Card.Text>
+              <Card.Img src={P2} />
+          </Card.Text>
         </Card>
-        <Card className="m-4" style={fontColor}>
-          <Card.Body>
-            <Card style={fontColor}>Helping-Hand</Card>
-            <br />
-            <Card.Img src={P3} />
-            <Card.Text>
-              <br />
+      </CardGroup>
+      <CardGroup style ={backgroundColor}>
+        <Card  style ={backgroundColor}>
+          <Card.Text style={center}>
+              <Card.Img src={P3} />
+          </Card.Text>
+        </Card>
+        <Card  style ={backgroundColor} >
+          <Card.Body >
+              <Accordion variant="danger" flush>
+                  <Accordion.Item style={backgroundColor} eventKey="0">
+                      <Accordion.Header>
+                        <Card style={fontColor}><h1>Helping-Hand</h1></Card>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                      <Card.Text>
               <h5 className="p-2" style={backgroundColor}>
                 > Helping hand gives these users the tools to find the right
                 information for meeting one another’s needs without having to
@@ -258,6 +163,9 @@ export default function Projects() {
               </Row>
               </Container>
             </Card.Text>
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Accordion>
           </Card.Body>
         </Card>
       </CardGroup>
