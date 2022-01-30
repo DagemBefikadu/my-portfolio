@@ -277,3 +277,96 @@
                   environments and adapt well to challenges.
                 </h5>
               </Card.Text> */}
+
+              <CardGroup style ={backgroundColor}>
+        <Card  style ={backgroundColor}>
+          <Card.Text style={center}>
+              <Card.Img src={P3} />
+          </Card.Text>
+        </Card>
+        <Card  style ={backgroundColor} >
+          <Card.Body >
+              <Accordion variant="danger" flush>
+                  <Accordion.Item style={backgroundColor} eventKey="0">
+                      <Accordion.Header>
+                        <Card style={fontColor}><h1>Helping-Hand</h1></Card>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                      <Card.Text>
+              <h5 className="p-2" style={backgroundColor}>
+                > Helping hand gives these users the tools to find the right
+                information for meeting one another’s needs without having to
+                look outside their own community
+              </h5>
+            </Card.Text>
+            <Card.Text>
+              <h5>
+                <strong>Technologies:</strong>
+              </h5>
+              <Row>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>CSS</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>JavaScript(ES6)</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>React</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>React Bootstrap</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>NodeJS</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>ExpressJS</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>MongoDB</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>Cloudinary’s API </h5>
+                </Col>
+              </Row>
+            </Card.Text>
+            <Card.Text>
+              <Container>
+              <Row>
+                <Col>
+                      <h5 style={fontColor}>GitHub Repo</h5>
+                  {" "}
+                  <a href="https://github.com/DagemBefikadu/Helping-Hand-React">
+                    <Image
+                      className="m-sm-5"
+                      src={GitHub}
+                      className="logo"
+                      alt="GitHub"
+                      width="50"
+                      length="50"
+                    />
+                  </a>
+                </Col>
+                <Col>
+                  {" "}
+                  <h5 style={fontColor}>Live Link</h5>
+                  <a href="https://helping-hands-sei.herokuapp.com/">
+                    <Image
+                      className="m-sm-5"
+                      src={Chrome}
+                      className="logo"
+                      alt="GitHub"
+                      width="50"
+                      length="50"
+                    />
+                  </a>
+                </Col>
+              </Row>
+              </Container>
+            </Card.Text>
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Accordion>
+          </Card.Body>
+        </Card>
+      </CardGroup>

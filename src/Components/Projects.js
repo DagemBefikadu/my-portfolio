@@ -20,9 +20,13 @@ export default function Projects() {
   };
 
   const borderColor = {
-    borderColor: "#f2f0eb",
+    borderStyle: "none",
     backgroundColor: "#f2f0eb",
     color: "black",
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '500px'
   };
 
   const center = {
@@ -39,6 +43,15 @@ export default function Projects() {
     fontFamily: '"Lucida Console", "Courier New", "monospace"',
   };
 
+  const fontBack = {
+    border: "#38361E",
+    color: "#F5F5DC",
+    fontFamily: '"Lucida Console", "Courier New", "monospace"',
+    borderStyle: "none",
+    backgroundColor: "#f2f0eb",
+    color: "black",
+  };
+
 
   return (
     <>
@@ -49,13 +62,13 @@ export default function Projects() {
               <Card.Title ><h1>Hoop Dreams</h1></Card.Title>
           </Card.Body> */}
           <Accordion className="m-2 text-center">
-      <Card style ={backgroundColor}>
-      <Card.Title className="text-center" ><h1>Hoop Dream</h1></Card.Title>
+      <Card style ={borderColor} >
+      <Card.Title ><h1>Hoop Dream</h1></Card.Title>
         <Card.Header>
           <CustomToggle eventKey="0">More Detail!</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
-        <Card id="projects" className="m-4" style={fontColor}>
+        <Card id="projects" className="m-4" style={fontBack}>
           <Card.Body>
             <Card.Text>
               <h6 className="p-2" style={backgroundColor}>
@@ -87,7 +100,7 @@ export default function Projects() {
               <Container>
               <Row>
                 <Col>
-                      <h5 style={fontColor}>GitHub Repo</h5>
+                      <h5 style={fontBack}>GitHub Repo</h5>
                   {" "}
                   <a href="https://github.com/DagemBefikadu/SEI-Project-one">
                     <Image
@@ -102,7 +115,7 @@ export default function Projects() {
                 </Col>
                 <Col>
                   {" "}
-                  <h5 style={fontColor}>Live Link</h5>
+                  <h5 style={fontBack}>Live Link</h5>
                   <a href="https://dagembefikadu.github.io/SEI-Project-one/">
                     <Image
                       className="m-sm-5"
@@ -131,9 +144,95 @@ export default function Projects() {
       </CardGroup>
       <CardGroup style ={backgroundColor}>
         <Card style ={backgroundColor}>
-          <Card.Body style={center} >
-              <Card.Title><h1>My Coffee</h1></Card.Title>
+          {/* <Card.Body style={center} >
+              <Card.Title ><h1>Hoop Dreams</h1></Card.Title>
+          </Card.Body> */}
+          <Accordion className="m-2 text-center">
+      <Card style ={borderColor} >
+      <Card.Title ><h1>My Coffee</h1></Card.Title>
+        <Card.Header>
+          <CustomToggle eventKey="0">More Detail!</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="0">
+        <Card id="projects" className="m-4" style={fontBack}>
+          <Card.Body>
+            <Card.Text>
+              <h6 className="p-2" style={fontBack}>
+              > My Coffee is a place where you can learn about all the
+                different kinds of coffee around the world. Here you can find
+                the name, description and origin of the coffees.
+              </h6>
+            </Card.Text>
+            <Card.Text>
+              <h5>
+                <strong>Technologies:</strong>
+              </h5>
+              <Row>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>HTML</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>CSS</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>JavaScript(ES6)</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>Bootstrap</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>EJS</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>ExpressJS</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>NodeJS</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>MySQL</h5>
+                </Col>
+              </Row>
+            </Card.Text>
+            <Card.Text>
+              <Container>
+              <Row>
+                <Col>
+                      <h5 style={fontBack}>GitHub Repo</h5>
+                  {" "}
+                  <a href="https://github.com/DagemBefikadu/projectTwoAssignment">
+                    <Image
+                      className="m-sm-5"
+                      src={GitHub}
+                      className="logo"
+                      alt="GitHub"
+                      width="50"
+                      length="50"
+                    />
+                  </a>
+                </Col>
+                <Col>
+                  {" "}
+                  <h5 style={fontBack}>Live Link</h5>
+                  <a href="https://yene-buna.herokuapp.com/">
+                    <Image
+                      className="m-sm-5"
+                      src={Chrome}
+                      className="logo"
+                      alt="GitHub"
+                      width="50"
+                      length="50"
+                    />
+                  </a>
+                </Col>
+              </Row>
+              </Container>
+            </Card.Text>
           </Card.Body>
+        </Card>
+        </Accordion.Collapse>
+      </Card>
+    </Accordion>
         </Card>
         <Card  style ={backgroundColor}>
           <Card.Text>
@@ -142,25 +241,25 @@ export default function Projects() {
         </Card>
       </CardGroup>
       <CardGroup style ={backgroundColor}>
-        <Card  style ={backgroundColor}>
-          <Card.Text style={center}>
-              <Card.Img src={P3} />
-          </Card.Text>
-        </Card>
-        <Card  style ={backgroundColor} >
-          <Card.Body >
-              <Accordion variant="danger" flush>
-                  <Accordion.Item style={backgroundColor} eventKey="0">
-                      <Accordion.Header>
-                        <Card style={fontColor}><h1>Helping-Hand</h1></Card>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                      <Card.Text>
-              <h5 className="p-2" style={backgroundColor}>
-                > Helping hand gives these users the tools to find the right
+        <Card style ={backgroundColor}>
+          {/* <Card.Body style={center} >
+              <Card.Title ><h1>Hoop Dreams</h1></Card.Title>
+          </Card.Body> */}
+          <Accordion className="m-2 text-center">
+      <Card style ={borderColor} >
+      <Card.Title ><h1>Helping-Hand</h1></Card.Title>
+        <Card.Header>
+          <CustomToggle eventKey="0">More Detail!</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="0">
+        <Card id="projects" className="m-4" style={fontBack}>
+          <Card.Body>
+            <Card.Text>
+              <h6 className="p-2" style={fontBack}>
+              > Helping hand gives these users the tools to find the right
                 information for meeting one another’s needs without having to
                 look outside their own community
-              </h5>
+              </h6>
             </Card.Text>
             <Card.Text>
               <h5>
@@ -197,7 +296,7 @@ export default function Projects() {
               <Container>
               <Row>
                 <Col>
-                      <h5 style={fontColor}>GitHub Repo</h5>
+                      <h5 style={fontBack}>GitHub Repo</h5>
                   {" "}
                   <a href="https://github.com/DagemBefikadu/Helping-Hand-React">
                     <Image
@@ -212,7 +311,7 @@ export default function Projects() {
                 </Col>
                 <Col>
                   {" "}
-                  <h5 style={fontColor}>Live Link</h5>
+                  <h5 style={fontBack}>Live Link</h5>
                   <a href="https://helping-hands-sei.herokuapp.com/">
                     <Image
                       className="m-sm-5"
@@ -227,10 +326,16 @@ export default function Projects() {
               </Row>
               </Container>
             </Card.Text>
-                      </Accordion.Body>
-                  </Accordion.Item>
-              </Accordion>
           </Card.Body>
+        </Card>
+        </Accordion.Collapse>
+      </Card>
+    </Accordion>
+        </Card>
+        <Card  style ={backgroundColor}>
+          <Card.Text>
+              <Card.Img src={P3} />
+          </Card.Text>
         </Card>
       </CardGroup>
     </>
