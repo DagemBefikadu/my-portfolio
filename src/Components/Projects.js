@@ -44,25 +44,89 @@ export default function Projects() {
     <>
       <h1 style={center}>Projects</h1>
       <CardGroup style ={backgroundColor}>
-        <Card  style ={backgroundColor}>
-          <Card.Text>
-              <Card.Img src={P1} />
-          </Card.Text>
-        </Card>
         <Card style ={backgroundColor}>
-          <Card.Body style={center} >
+          {/* <Card.Body style={center} >
               <Card.Title ><h1>Hoop Dreams</h1></Card.Title>
-          </Card.Body>
-          <Accordion style={center} defaultActiveKey="0">
+          </Card.Body> */}
+          <Accordion className="m-2 text-center">
       <Card style ={backgroundColor}>
+      <Card.Title className="text-center" ><h1>Hoop Dream</h1></Card.Title>
         <Card.Header>
           <CustomToggle eventKey="0">More Detail!</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
-          <Card.Body>Hello! I'm the body</Card.Body>
+        <Card id="projects" className="m-4" style={fontColor}>
+          <Card.Body>
+            <Card.Text>
+              <h6 className="p-2" style={backgroundColor}>
+                > Hoop Dreamer is a game where you will go around the court and
+                collect all the game balls before the clock runs out. While
+                avoiding the food and sweat puddles
+              </h6>
+            </Card.Text>
+            <Card.Text>
+              <h5>
+                <strong>Technologies:</strong>
+              </h5>
+              <Row>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>HTML(Canvas)</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>JavaScript(ES6)</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>CSS</h5>
+                </Col>
+                <Col className="m-1" style={backgroundColor}>
+                  <h5>Bootstrap</h5>
+                </Col>
+              </Row>
+            </Card.Text>
+            <Card.Text>
+              <Container>
+              <Row>
+                <Col>
+                      <h5 style={fontColor}>GitHub Repo</h5>
+                  {" "}
+                  <a href="https://github.com/DagemBefikadu/SEI-Project-one">
+                    <Image
+                      className="m-sm-5"
+                      src={GitHub}
+                      className="logo"
+                      alt="GitHub"
+                      width="50"
+                      length="50"
+                    />
+                  </a>
+                </Col>
+                <Col>
+                  {" "}
+                  <h5 style={fontColor}>Live Link</h5>
+                  <a href="https://dagembefikadu.github.io/SEI-Project-one/">
+                    <Image
+                      className="m-sm-5"
+                      src={Chrome}
+                      className="logo"
+                      alt="GitHub"
+                      width="50"
+                      length="50"
+                    />
+                  </a>
+                </Col>
+              </Row>
+              </Container>
+            </Card.Text>
+          </Card.Body>
+        </Card>
         </Accordion.Collapse>
       </Card>
     </Accordion>
+        </Card>
+        <Card  style ={backgroundColor}>
+          <Card.Text>
+              <Card.Img src={P1} />
+          </Card.Text>
         </Card>
       </CardGroup>
       <CardGroup style ={backgroundColor}>

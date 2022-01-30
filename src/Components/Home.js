@@ -53,7 +53,7 @@ export default function Home() {
                   }}
                 />
               </Card.Text>
-              
+              <Card.Text><h4 style={font}>"As a lifelong learner I love all things Tech"</h4></Card.Text>
               <Card.Text >
               <a href='https://linkedin.com/in/dagembefikadu'><Image className="m-5" data-aos="fade-right" src={LinkedIn}  className="logo" alt="GitHub"width="50" length="50"/></a>
               <a href={'mailto:dagem.befikadu@outlook.com'}><Image className="m-5" data-aos="fade-down" alt="Outlook" src={Outlook}width="50" length="50"/></a>

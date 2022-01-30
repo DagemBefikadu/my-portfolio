@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardGroup, Container, Image } from "react-bootstrap";
+import { Card, CardGroup, Container, Image, Accordion } from "react-bootstrap";
 import css from "../Static/MyOther/css.png";
 import js from "../Static/MyOther/js.png";
 import mongo from "../Static/MyOther/mongo.png";
@@ -8,6 +8,7 @@ import npm from "../Static/MyOther/npm.png";
 import post from "../Static/MyOther/post.png";
 import react from "../Static/MyOther/react.png";
 import python from "../Static/MyOther/python.png";
+import AboutToggle from "./AboutToggle"
 
 
 export default function About() {
@@ -32,9 +33,14 @@ export default function About() {
           <Card  style={backgroundColor}>
             <Card.Body>
             <Card style={fontColor}>A Little About Me...</Card>
-            
-              <Card.Text><h4 style={font}>"As a lifelong learner I love all things Tech"</h4></Card.Text>
-              <Card.Text>
+            <Accordion defaultActiveKey="0">
+      <Card>
+        <Card.Header>
+          <AboutToggle eventKey="0">What Do I Bring</AboutToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="0">
+          <Card.Body>
+          <Card.Text>
                 <h5 style={font}>
                   > I'm a Full Stack Web Deleloper driven by critical thinking and
                   problem solving. <br />
@@ -44,6 +50,38 @@ export default function About() {
                   environments and adapt well to challenges.
                 </h5>
               </Card.Text>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header>
+          <AboutToggle eventKey="2">Learning</AboutToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="2">
+          <Card.Body style={font}>
+            <h5>
+            > Currently refactor my old projects
+            <hr />
+            > Also working on a new Python project with the help of Udemy
+            </h5>
+            </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header>
+          <AboutToggle eventKey="1">On My Free time </AboutToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="1">
+          <Card.Body>
+          <h5 style={font}>
+            > Playing Basketball
+            <hr />
+            > Watching Basketball(Basketball fanactic, Die Hard Warriors Fan!!!) but I also love watching Football(Raider Nation) and Soccer(Go Manchester City)
+            </h5>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+    </Accordion>
             </Card.Body>
           </Card>
           <Card style={backgroundColor}>
