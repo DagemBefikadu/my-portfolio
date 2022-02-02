@@ -55,12 +55,9 @@ export default function Projects() {
 
   return (
     <>
-      <h1 style={center}>Projects</h1>
+      <h1 id="projects" style={center}>Projects</h1>
       <CardGroup style ={backgroundColor}>
         <Card style ={backgroundColor}>
-          {/* <Card.Body style={center} >
-              <Card.Title ><h1>Hoop Dreams</h1></Card.Title>
-          </Card.Body> */}
           <Accordion className="m-2 text-center">
       <Card style ={borderColor} >
       <Card.Title ><h1>Hoop Dream</h1></Card.Title>
