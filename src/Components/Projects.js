@@ -99,7 +99,7 @@ export default function Projects() {
                 <Col>
                       <h5 style={fontBack}>GitHub Repo</h5>
                   {" "}
-                  <a href="https://github.com/DagemBefikadu/SEI-Project-one">
+                  <a href="https://github.com/DagemBefikadu/SEI-Project-one" target="_blank">
                     <Image
                       className="m-sm-5"
                       src={GitHub}
@@ -113,7 +113,7 @@ export default function Projects() {
                 <Col>
                   {" "}
                   <h5 style={fontBack}>Live Link</h5>
-                  <a href="https://dagembefikadu.github.io/SEI-Project-one/">
+                  <a href="https://dagembefikadu.github.io/SEI-Project-one/" target="_blank">
                     <Image
                       className="m-sm-5"
                       src={Chrome}
@@ -197,7 +197,7 @@ export default function Projects() {
                 <Col>
                       <h5 style={fontBack}>GitHub Repo</h5>
                   {" "}
-                  <a href="https://github.com/DagemBefikadu/projectTwoAssignment">
+                  <a href="https://github.com/DagemBefikadu/projectTwoAssignment" target="_blank">
                     <Image
                       className="m-sm-5"
                       src={GitHub}
@@ -211,7 +211,7 @@ export default function Projects() {
                 <Col>
                   {" "}
                   <h5 style={fontBack}>Live Link</h5>
-                  <a href="https://yene-buna.herokuapp.com/">
+                  <a href="https://yene-buna.herokuapp.com/" target="_blank">
                     <Image
                       className="m-sm-5"
                       src={Chrome}
@@ -295,7 +295,7 @@ export default function Projects() {
                 <Col>
                       <h5 style={fontBack}>GitHub Repo</h5>
                   {" "}
-                  <a href="https://github.com/DagemBefikadu/Helping-Hand-React">
+                  <a href="https://github.com/DagemBefikadu/Helping-Hand-React" target="_blank">
                     <Image
                       className="m-sm-5"
                       src={GitHub}
@@ -309,7 +309,7 @@ export default function Projects() {
                 <Col>
                   {" "}
                   <h5 style={fontBack}>Live Link</h5>
-                  <a href="https://helping-hands-sei.herokuapp.com/">
+                  <a href="https://helping-hands-sei.herokuapp.com/" target="_blank">
                     <Image
                       className="m-sm-5"
                       src={Chrome}
