@@ -37,9 +37,12 @@ export default function Projects() {
   };
 
   const fontColor = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '210px',
     border: "#38361E",
-    backgroundColor: "#38361E",
-    color: "#F5F5DC",
+    color: "black",
     fontFamily: '"Lucida Console", "Courier New", "monospace"',
   };
 
@@ -55,12 +58,12 @@ export default function Projects() {
 
   return (
     <>
-      <h1 id="projects" style={center}>Projects</h1>
-      <CardGroup style ={backgroundColor}>
-        <Card style ={backgroundColor}>
+      <h1 id="projects" style={fontColor} className="text-center" >Projects</h1>
+      <CardGroup style ={backgroundColor} className="">
+        <Card style ={backgroundColor} >
           <Accordion className="m-2 text-center">
-      <Card style ={borderColor} >
-      <Card.Title ><h1>Hoop Dream</h1></Card.Title>
+      <Card style ={borderColor}  >
+      <Card.Title><h1>Hoop Dream</h1></Card.Title>
         <Card.Header>
           <CustomToggle eventKey="0">More Detail!</CustomToggle>
         </Card.Header>
