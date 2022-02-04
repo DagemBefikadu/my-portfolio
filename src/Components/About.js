@@ -42,7 +42,7 @@ export default function About() {
           <Card.Body>
           <Card.Text>
                 <h5 style={font}>
-                  > I'm a Full Stack Web Deleloper driven by critical thinking and
+                  > I'm a Full Stack Web Developer driven by critical thinking and
                   problem solving. <br />
                   With a background in Sales and Management I possess the
                   ability to thrive in fast-paced environments which required
