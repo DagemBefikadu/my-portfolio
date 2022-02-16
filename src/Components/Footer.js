@@ -5,6 +5,7 @@ export default function Footer() {
         <div>
             <h6>Dagem Befikadu - 2022 - REACT</h6>
             <h6>Contact info </h6>
+            <h6>Links to the git</h6>
         </div>
     )
 }
