@@ -28,7 +28,6 @@ function App() {
         <br />
         <br />
         <br />
-        {/* <Line /> */}
         <br />
         <br />
         <br />
