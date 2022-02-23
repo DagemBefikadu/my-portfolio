@@ -14,14 +14,6 @@ export default function Header() {
   };
   return (
     <>
-      {/* <Navbar bg="light" expand="md">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto ">
-            <Nav.Link href={Resume} target="_blank">| Resume</Nav.Link> 
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar> */}
       <Navbar.Brand>
         <Image src={logo} width="300" height="300" />
       </Navbar.Brand>
