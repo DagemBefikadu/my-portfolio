@@ -45,7 +45,7 @@ function App() {
         <br />
         {/* <Line /> */}
         {/* <br />
-        <br /> */}
+
         <h1>
           <Projects />
         </h1>
