@@ -44,8 +44,6 @@ function App() {
         <br style={backgroundColor}/>
         <br />
         {/* <Line /> */}
-        {/* <br />
-
         <h1>
           <Projects />
         </h1>
