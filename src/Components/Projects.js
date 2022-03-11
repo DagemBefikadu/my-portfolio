@@ -75,6 +75,10 @@ export default function Projects() {
                 > Hoop Dreamer is a game where you will go around the court and
                 collect all the game balls before the clock runs out. While
                 avoiding the food and sweat puddles
+              <h6>
+                <br />
+                > Only available on Desktop
+              </h6>
               </h6>
             </Card.Text>
             <Card.Text>
