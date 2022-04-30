@@ -27,7 +27,7 @@ export default function Header() {
         <Image src={logo} width="300" height="300" />
       </Navbar.Brand>
       {/* Change the color */}
-      {/* Add two more color */}
+      Add two more color
     </>
   );
 }
